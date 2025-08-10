@@ -9,7 +9,7 @@ h1 {
     text-align: center;
 }
 
-input[type="submit"], input[type="number"] {
+input[type="submit"] {
     border: 0;
     background: whitesmoke;
     display: block;
