@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+    background: whitesmoke;
+}
+
+h1 {
+    font-size: 40px;
+    color: blueviolet;
+    text-align: center;
+}
+
+input[type="submit"] {
+    border: 0;
+    background: whitesmoke;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid rebeccapurple;
+    padding: 15px 10px;
+    width: 200px;
+    outline: none;
+    color: blueviolet;
+    border-radius: 25px;
+    transition: 0.25s;
+    text-align: center;
+    cursor: pointer;
+}

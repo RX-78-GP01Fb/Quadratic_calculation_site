@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <base target="_top">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>
+    <h1>
+      二次方程式計算サイト
+    </h1>
+  </div>
+  <div>
+    <h1>
+      <math>
+        <mi>a</mi>
+        <msup>
+          <mi>x</mi>
+          <mn>2</mn>
+        </msup>
+        <mo>+</mo>
+        <mi>b</mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>c</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </math>
+    </h1>
+  </div>
+  <div>
+    <h1>
+      適当な数を入力して下さい
+    </h1>
+  </div>
+  <div>
+    <h1 id="answer">
+    </h1>
+  </div>
+  <div>
+    <h1>a:
+      <input type="number" autocomplete="number" id="a" size="100" value="" placeholder="aを入力してください">
+    </h1>
+  </div>
+  <div>
+    <h1>b:
+      <input type="number" autocomplete="number" id="b" size="100" value="" placeholder="bを入力してください">
+    </h1>
+  </div>
+  <div>
+    <h1>c:
+      <input type="number" autocomplete="number" id="c" size="100" value="" placeholder="cを入力してください">
+    </h1>
+  </div>
+  <div>
+    <h1>
+      <label for="text"></label>
+      <input type="submit" id="btn_submit" value="解を求める">
+    </h1>
+  </div>
+  <div>
+    <h1>
+      <label for="text"></label>
+      <input type="submit" id="clear" value="クリア">
+    </h1>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://fred-wang.github.io/mathml-warning.js/mpadded-min.js"></script>
+</body>
+
+</html>
