@@ -217,6 +217,5 @@ function five(a, b) {
     const value = absA / absB;
     return `<math>${isNegative ? "<mo>-</mo>" : ""}<mn>${value}</mn></math>`;
   }
-  console.log(`<math>${isNegative ? "<mo>-</mo>" : ""}<mfrac><mn>${absA}</mn><mn>${absB}</mn></mfrac></math>`);
   return `<math>${isNegative ? "<mo>-</mo>" : ""}<mfrac><mn>${absA}</mn><mn>${absB}</mn></mfrac></math>`;
 }
