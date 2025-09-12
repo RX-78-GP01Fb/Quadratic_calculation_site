@@ -24,40 +24,31 @@ input_submit.addEventListener(`click`, function (e) {
         answer = answer[0] + `<mo>,</mo>` + answer[1];
     }
     if (a == 1) {
-        a = `<msup><mi>x</mi><mn>2</mn></msup>`;
-    }
-    if (a == -1) {
-        a = `<mo>-</mo><msup><mi>x</mi><mn>2</mn></msup>`;
+      a = `<msup><mi>x</mi><mn>2</mn></msup>`;
+    } else if (a == -1) {
+      a = `<mo>-</mo><msup><mi>x</mi><mn>2</mn></msup>`;
+    } else if (0 < a) {
+      a = `<mn>${a}</mn><msup><mi>x</mi><mn>2</mn></msup>`;
+    } else if (a < 0) {
+      a = `<mo>-</mo><mn>${Math.abs(a)}</mn><msup><mi>x</mi><mn>2</mn></msup>`;
     }
     if (b == 1) {
-        b = `<mo>+</mo><mi>x</mi>`;
-    }
-    if (b == -1) {
-        b = `<mo>-</mo><mi>x</mi>`;
-    }
-    if (b == 0) {
-        b = ``;
+      b = `<mo>+</mo><mi>x</mi>`;
+    } else if (b == -1) {
+      b = `<mo>-</mo><mi>x</mi>`;
+    } else if (b == 0) {
+      b = ``;
+    } else if (0 < b) {
+      b = `<mo>+</mo><mn>${b}</mn><mi>x</mi>`;
+    } else if (b < 0) {
+      b = `<mo>-</mo><mn>${Math.abs(b)}</mn><mi>x</mi>`;
     }
     if (c == 0) {
-        c = ``;
-    }
-    if (0 < b) {
-        b = `<mo>+</mo><mn>${b}</mn><mi>x</mi>`;
-    }
-    if (b < 0) {
-        b = `<mo>-</mo><mn>${Math.abs(b)}</mn><mi>x</mi>`;
-    }
-    if (0 < c) {
-        c = `<mo>+</mo><mn>${c}</mn>`;
-    }
-    if (c < 0) {
-        c = `<mo>-</mo><mn>${Math.abs(c)}</mn>`;
-    }
-    if (0 < a) {
-        a = `<mn>${a}</mn><msup><mi>x</mi><mn>2</mn></msup>`;
-    }
-    if (a < 0) {
-        a = `<mo>-</mo><mn>${Math.abs(a)}</mn><msup><mi>x</mi><mn>2</mn></msup>`;
+      c = ``;
+    } else if (0 < c) {
+      c = `<mo>+</mo><mn>${c}</mn>`;
+    } else if (c < 0) {
+      c = `<mo>-</mo><mn>${Math.abs(c)}</mn>`;
     }
     answer = `<math>${a}${b}${c}<mo>=</mo><mn>0</mn></math><br><math><mi>x</mi><mo>=</mo></math><br>` + answer;
     document.getElementById(`answer`).innerHTML = answer;
