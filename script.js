@@ -35,6 +35,12 @@ input_submit.addEventListener(`click`, function (e) {
     if (b == -1) {
         b = `<mo>-</mo><mi>x</mi>`;
     }
+    if (b == 0) {
+        b = ``;
+    }
+    if (c == 0) {
+        c = ``;
+    }
     if (0 < b) {
         b = `<mo>+</mo><mn>${b}</mn><mi>x</mi>`;
     }
@@ -52,12 +58,6 @@ input_submit.addEventListener(`click`, function (e) {
     }
     if (a < 0) {
         a = `<mo>-</mo><mn>${Math.abs(a)}</mn><msup><mi>x</mi><mn>2</mn></msup>`;
-    }
-    if (b == 0) {
-        b = ``;
-    }
-    if (c == 0) {
-        c = ``;
     }
     answer = `<math>${a}${b}${c}<mo>=</mo><mn>0</mn></math><br><math><mi>x</mi><mo>=</mo></math><br>` + answer;
     document.getElementById(`answer`).innerHTML = answer;
