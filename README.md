@@ -2,7 +2,7 @@
 ax²+bx+c=0の形の二次方程式の解を求めます。  
 このサイトは教育目的で二次方程式の計算・学習に利用できます。
 
-🔗 [👉 実際のサイトを開く](https://rx-78-gp01fb.github.io/Quadratic_calculation_site/)
+<a href="https://rx-78-gp01fb.github.io/Quadratic_calculation_site/" target="_blank" rel="noopener noreferrer">実際のサイトを開く</a>
 
 ## ライセンス
 
