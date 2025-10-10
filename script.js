@@ -5,16 +5,12 @@ input_submit.addEventListener(`click`, function (e) {
     let a = document.querySelector(`input[id=a]`).value;
     let b = document.querySelector(`input[id=b]`).value;
     let c = document.querySelector(`input[id=c]`).value;
-    if (isNaN(a) || isNaN(b) || isNaN(c) || a == `` || b == `` || c == ``) {
-        alert(`おいゴルァ、数字入れろ！あくしろよ`);
-        return;
-    }
     if (a == b && b == c) {
-        alert(`おいKMR、お前全部同じ数字入れただろ`);
+        alert(`ちょっと、全部同じ数字入れたでしょ!`);
         return;
     }
     if (a == 0) {
-        alert(`これaが0じゃねぇか！`);
+        alert(`これaが0じゃない！`);
         return;
     }
     let answer = getAnswer(a, b, c);
