@@ -1,21 +1,18 @@
-# Security Policy
+# セキュリティポリシー
 
-## Supported Versions
+## サポート対象バージョン
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+このセクションでは、現在セキュリティアップデートがサポートされているプロジェクトのバージョンについてお知らせします。
 
-| Version | Supported          |
+| バージョン | サポート対象 |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| 5.1.x | :white_check_mark: |
+| 5.0.x | :x: |
+| 4.0.x | :white_check_mark: |
+| < 4.0 | :x: |
 
-## Reporting a Vulnerability
+## 脆弱性の報告
 
-Use this section to tell people how to report a vulnerability.
+このセクションでは、脆弱性の報告方法を説明します。
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+報告先、報告された脆弱性に関する更新情報の入手頻度、脆弱性が承認または却下された場合の対応などについて説明します。
