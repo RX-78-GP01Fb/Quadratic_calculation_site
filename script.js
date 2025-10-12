@@ -6,11 +6,11 @@ input_submit.addEventListener(`click`, function (e) {
     let b = document.querySelector(`input[id=b]`).value;
     let c = document.querySelector(`input[id=c]`).value;
     if (a == b && b == c) {
-        alert(`ちょっと、全部同じ数字入れたでしょ!`);
+        alert(`ちょっと、全部同じ数字入れてどうするのよ!`);
         return;
     }
     if (a == 0) {
-        alert(`これaが0じゃない！`);
+        alert(`ちょっと、aが0じゃ二次方程式にならないでしょ！`);
         return;
     }
     let answer = getAnswer(a, b, c);
@@ -47,7 +47,7 @@ input_submit.addEventListener(`click`, function (e) {
       c = `<mo>-</mo><mn>${Math.abs(c)}</mn>`;
     }
     answer = `<math>${a}${b}${c}<mo>=</mo><mn>0</mn></math><br><math><mi>x</mi><mo>=</mo></math><br>` + answer;
-    document.getElementById(`answer`).innerHTML = answer;
+    document.getElementById(`answer`).innerHTML = "か、勘違いしないでよねっ！これは仕事だから解を求めてるだけなんだからねっ！\n" * answer;
 });
 
 clear.addEventListener(`click`, function (e) {
