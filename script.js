@@ -5,6 +5,34 @@ input_submit.addEventListener(`click`, function (e) {
     let a = document.querySelector(`input[id=a]`).value;
     let b = document.querySelector(`input[id=b]`).value;
     let c = document.querySelector(`input[id=c]`).value;
+    if (a == "" && b != "" && c != "") {
+        alert(`ちょっと、aに数字を入れなさいよ！`);
+        return;
+    }
+    if (a != "" && b == "" && c != "") {
+        alert(`ちょっと、bに数字を入れなさいよ！`);
+        return;
+    }
+    if (a != "" && b == "" && c != "") {
+        alert(`ちょっと、cに数字を入れなさいよ！`);
+        return;
+    }
+    if (a == "" && b == "" && c != "") {
+        alert(`ちょっと、aとbに数字を入れなさいよ！`);
+        return;
+    }
+    if (a == "" && b != "" && c == "") {
+        alert(`ちょっと、aとcに数字を入れなさいよ！`);
+        return;
+    }
+    if (a != "" && b == "" && c == "") {
+        alert(`ちょっと、bとcに数字を入れなさいよ！`);
+        return;
+    }
+    if (a == "" && b == "" && c == "") {
+        alert(`ちょっと、aとbとcに数字を入れなさいよ！`);
+        return;
+    }
     if (a == b && b == c) {
         alert(`ちょっと、全部同じ数字入れてどうするのよ!`);
         return;
