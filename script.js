@@ -47,7 +47,7 @@ input_submit.addEventListener(`click`, function (e) {
       c = `<mo>-</mo><mn>${Math.abs(c)}</mn>`;
     }
     answer = `<math>${a}${b}${c}<mo>=</mo><mn>0</mn></math><br><math><mi>x</mi><mo>=</mo></math><br>` + answer;
-    document.getElementById(`answer`).innerHTML = `か、勘違いしないでよねっ！これは仕事だから解を求めてるだけなんだからねっ！\n` + answer;
+    document.getElementById(`answer`).innerHTML = answer;
 });
 
 clear.addEventListener(`click`, function (e) {
