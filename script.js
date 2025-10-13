@@ -22,11 +22,11 @@ input_submit.addEventListener(`click`, function (e) {
         return;
     }
     if (a == "" && b != "" && c == "") {
-        alert(`ちょっと、aとcに数字を入れなさいよ！っ`);
+        alert(`ちょっと、aとcに数字を入れなさいよっ！`);
         return;
     }
     if (a != "" && b == "" && c == "") {
-        alert(`ちょっと、bとcに数字を入れなさいよ！っ`);
+        alert(`ちょっと、bとcに数字を入れなさいよっ！`);
         return;
     }
     if (a == "" && b == "" && c == "") {
