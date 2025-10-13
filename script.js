@@ -6,31 +6,31 @@ input_submit.addEventListener(`click`, function (e) {
     let b = document.querySelector(`input[id=b]`).value;
     let c = document.querySelector(`input[id=c]`).value;
     if (a == "" && b != "" && c != "") {
-        alert(`ちょっと、aに数字を入れなさいよ！`);
+        alert(`ちょっと、aに数字を入れなさいよっ！`);
         return;
     }
     if (a != "" && b == "" && c != "") {
-        alert(`ちょっと、bに数字を入れなさいよ！`);
+        alert(`ちょっと、bに数字を入れなさいよっ！`);
         return;
     }
     if (a != "" && b == "" && c != "") {
-        alert(`ちょっと、cに数字を入れなさいよ！`);
+        alert(`ちょっと、cに数字を入れなさいよっ！`);
         return;
     }
     if (a == "" && b == "" && c != "") {
-        alert(`ちょっと、aとbに数字を入れなさいよ！`);
+        alert(`ちょっと、aとbに数字を入れなさいよ！っ`);
         return;
     }
     if (a == "" && b != "" && c == "") {
-        alert(`ちょっと、aとcに数字を入れなさいよ！`);
+        alert(`ちょっと、aとcに数字を入れなさいよ！っ`);
         return;
     }
     if (a != "" && b == "" && c == "") {
-        alert(`ちょっと、bとcに数字を入れなさいよ！`);
+        alert(`ちょっと、bとcに数字を入れなさいよ！っ`);
         return;
     }
     if (a == "" && b == "" && c == "") {
-        alert(`ちょっと、aとbとcに数字を入れなさいよ！`);
+        alert(`ちょっと、aとbとcに数字を入れなさいよっ！`);
         return;
     }
     if (a == b && b == c) {
