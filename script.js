@@ -78,14 +78,14 @@ function solveQuadratic(a,b,c,d){
     x1=x2=a===1?`<math>${numerator}</math>`:`<math><mfrac>${numerator}<mn>${a}</mn></mfrac></math>`;
   }
   if(d<0){
-    [a,b,c] = reduceGCD(a,b,c); d*=-1;
-    const signB = b!==0?(b<0?'<mo>-</mo>':''):'';
-    const absB = Math.abs(b);
-    const absC = Math.abs(c);
-    const coef = absC===1?'':`<mn>${absC}</mn>`;
-    const numerator = `<mrow>${signB}<mo>±</mo>${coef}<msqrt><mn>${d}</mn></msqrt><mi>i</mi></mrow>`;
-    x1=x2=a===1?`<math>${numerator}</math>`:`<math><mfrac>${numerator}<mn>${a}</mn></mfrac></math>`;
-  }
+  [a,b,c] = reduceGCD(a,b,c); 
+  const negB = -b; // ← b を反転して符号を正しくする
+  const absB = Math.abs(negB);
+  const absC = Math.abs(c);
+  const coef = absC===1?'':`<mn>${absC}</mn>`;
+  const numerator = `<mrow>${negB!==0?(negB<0?'<mo>-</mo>':'<mo>+</mo>'):''}<mo>±</mo>${coef}<msqrt><mn>${-d}</mn></msqrt><mi>i</mi></mrow>`;
+  x1=x2=a===1?`<math>${numerator}</math>`:`<math><mfrac>${numerator}<mn>${a}</mn></mfrac></math>`;
+}
   return x1===x2?[x1]:[x1,x2];
 }
 
