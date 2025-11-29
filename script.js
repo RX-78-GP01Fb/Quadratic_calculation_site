@@ -2,38 +2,13 @@ const input_submit = document.querySelector(`input[id=btn_submit]`);
 const clear = document.querySelector(`input[id=clear]`);
 input_submit.addEventListener(`click`, function (e) {
     e.preventDefault();
-    let a = document.querySelector(`input[id=a]`).value;
-    let b = document.querySelector(`input[id=b]`).value;
-    let c = document.querySelector(`input[id=c]`).value;
-    if (a == "" && b != "" && c != "") {
-        alert(`ちょっと、aに数字を入れなさいよ！`);
-        return;
-    }
-    if (a != "" && b == "" && c != "") {
-        alert(`ちょっと、bに数字を入れなさいよ！`);
-        return;
-    }
-    if (a != "" && b == "" && c != "") {
-        alert(`ちょっと、cに数字を入れなさいよ！`);
-        return;
-    }
-    if (a == "" && b == "" && c != "") {
-        alert(`ちょっと、aとbに数字を入れなさいよ！`);
-        return;
-    }
-    if (a == "" && b != "" && c == "") {
-        alert(`ちょっと、aとcに数字を入れなさいよ！`);
-        return;
-    }
-    if (a != "" && b == "" && c == "") {
-        alert(`ちょっと、bとcに数字を入れなさいよ！`);
-        return;
-    }
-    if (a == "" && b == "" && c == "") {
-        alert(`ちょっと、aとbとcに数字を入れなさいよ！`);
-        return;
-    }
-    if (a == 0) {
+    let a = document.querySelector(`input[id=a]`).value.trim();
+    let b = document.querySelector(`input[id=b]`).value.trim();
+    let c = document.querySelector(`input[id=c]`).value.trim();
+    const inputs = {a, b, c};
+    const missing = Object.keys(inputs).filter(key => !inputs[key]);
+    if (missing.length) alert(`ちょっと、${missing.join("と")}に数字を入れなさいよ！`);
+    if (a === 0) {
         alert(`ちょっと、aが0じゃ二次方程式にならないでしょ！`);
         return;
     }
@@ -168,9 +143,9 @@ function three(a, b, c, d) {
     const root = `<msqrt><mn>${d}</mn></msqrt>`;
     const numerator = `<mrow>${bPart}${showB ? `<mo>±</mo>` : `<mo>±</mo>`}${coef}${root}</mrow>`;
     if (a === 1) {
-      a1 = `<math xmlns="http://www.w3.org/1998/Math/MathML">${numerator}</math>`;
+      a1 = `<math>${numerator}</math>`;
     } else {
-      a1 = `<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac>${numerator}<mn>${a}</mn></mfrac></math>`;
+      a1 = `<math><mfrac>${numerator}<mn>${a}</mn></mfrac></math>`;
     }
     a2 = a1;
   }
@@ -189,9 +164,9 @@ function three(a, b, c, d) {
     const root = d === 1 ? `` : `<msqrt><mn>${d}</mn></msqrt>`;
     const numerator = `<mrow>${bPart}<mo>±</mo>${coef}${root}<mi>i</mi></mrow>`;
     if (a === 1) {
-      a1 = `<math xmlns="http://www.w3.org/1998/Math/MathML">${numerator}</math>`;
+      a1 = `<math>${numerator}</math>`;
     } else {
-      a1 = `<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac>${numerator}<mn>${a}</mn></mfrac></math>`;
+      a1 = `<math><mfrac>${numerator}<mn>${a}</mn></mfrac></math>`;
     }
 
     a2 = a1;
