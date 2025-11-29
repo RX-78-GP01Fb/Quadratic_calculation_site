@@ -33,10 +33,6 @@ input_submit.addEventListener(`click`, function (e) {
         alert(`ちょっと、aとbとcに数字を入れなさいよ！`);
         return;
     }
-    if (a == b && b == c) {
-        alert(`ちょっと、全部同じ数字入れてどうするのよ!`);
-        return;
-    }
     if (a == 0) {
         alert(`ちょっと、aが0じゃ二次方程式にならないでしょ！`);
         return;
