@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- PWA設定 -->
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="./manifest.json">
   <meta name="theme-color" content="#6a0dad">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="二次方程式.png" type="image/png">
@@ -75,7 +75,7 @@
   <script src="https://fred-wang.github.io/mathml-warning.js/mpadded-min.js"></script>
   <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('./sw.js')
       .then(() => console.log('SW登録成功'))
       .catch(err => console.log('SW登録失敗', err));
   }
