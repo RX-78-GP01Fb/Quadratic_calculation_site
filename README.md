@@ -1,9 +1,9 @@
-# 二次方程式計算サイト - 解の公式で計算 | quadratic equation solver
+# 二次方程式計算サイト - 解の公式で計算 | quadratic equation solver（解の公式で計算）
 ax²+bx+c=0 の形の二次方程式を入力すると、解の公式を用いて解を自動計算できる無料の学習用ツールです。 
 このサイトは教育目的で二次方程式の計算・学習に利用できます。  
 MathMLによる表示を含め、計算ロジックおよびUIを実装しています。
 
-🔗👉 [二次方程式計算サイト（開く）](https://rx-78-gp01fb.github.io/Quadratic_calculation_site/)  
+🔗👉 [二次方程式計算サイトを開く](https://rx-78-gp01fb.github.io/Quadratic_calculation_site/)  
 （別タブで開きたい場合は右クリック → 「新しいタブで開く」を選んでください）
 
 ## ライセンス
